@@ -64,6 +64,7 @@ Some of these styles get overridden in the export version.
 	overflow: hidden;
 	aspect-ratio: 10 / 15; /* DCS kneeboard aspect ratio: 10:15 */
 	height: calc(100vh - var(--controls-height) - var(--content-bottom-margin)); /* Full height minus the .controls section */
+	font-size: 15px;
 	border: 1px solid #CCC;
 	box-sizing: border-box; /* Borders and padding expand inward and do not adjust the size of the element. */
 	background-color: white; /* Without this the png's would have a transparent background */
@@ -83,12 +84,12 @@ Some of these styles get overridden in the export version.
 
 /* Kneeboard (export version)
 The version of the kneeboard that gets exported needs to be adjusted a bit since it's usually larger than the preview.
-I've made these adjustments by eye so they might not line up perferctly with the preview version.
+I've made these adjustments by eye so they might not line up perfectly with the preview version.
 */
 #kneeboard.export {
 	width: 1280px;
 	height: 1920px;
-	font-size: 38px;
+	font-size: 34px;
 	padding: 64px;
 	gap: 64px;
 
@@ -97,7 +98,7 @@ I've made these adjustments by eye so they might not line up perferctly with the
 	}
 
 	li {
-		padding: 12px;
+		padding: 10px;
 	}
 }
 

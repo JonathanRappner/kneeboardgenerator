@@ -42,19 +42,19 @@
 .darkGreen {
 	color: white;
 	border-bottom-color: white;
-	background-color: hsl(120, 100%, 28%);
+	background-color: #38761d;
 }
 
 .green {
-	color: white;
-	border-bottom-color: white;
-	background-color: hsl(120, 40%, 50%);
+	color: black;
+	border-bottom-color: black;
+	background-color: #93c47d;
 }
 
 .lightGreen {
 	color: black;
 	border-bottom-color: black;
-	background-color: hsl(120, 70%, 60%);
+	background-color: #b6d7a8;
 }
 
 
