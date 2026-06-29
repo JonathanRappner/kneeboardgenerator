@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example Aircraft - Startup</title>
+	<link rel="icon" href="data:image/png;base64,iVBORw0KGgo=">
+	<link rel="stylesheet" href="/global.css">
+	<link rel="stylesheet" href="/cells.css">
+	<link rel="stylesheet" href="./local.css">
+	<script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.min.js"></script>
+	<script>
+		const kneeboardFilename = "01 startup.png"
+	</script>
+	<script src="/export-html.js" defer></script>
+</head>
+
+<body>
+	<main class="app">
+		<div class="controls">
+			<button id="btn-export" type="button">Export as "<span></span>"</button>
+		</div>
+
+		<div class="content">
+			<div id="kneeboard" class="two-columns">
+
+				<!-- Column 1 -->
+				<div class="col1">
+
+					<ul>
+						<li class="heading">Startup</li>
+						<li class="lightRed">Anticol <strong>BOTH FAA</strong></li>
+						<li class="lightRed">Batt <strong>ON</strong></li>
+						<li class="lightRed">APU <strong>RUN (5s)</strong></li>
+						<li class="lightRed">APU <strong>START (2s)</strong></li>
+						<li class="lightRed">APU Gen <strong>ON</strong></li>
+						<li class="misc">APU Gen <strong>MFD INST PAGE</strong></li>
+					</ul>
+
+				</div>
+
+				<!-- Column 2 -->
+				<div class="col2">
+
+					<ul>
+						<li class="heading">Radios</li>
+						<li class="">foobar</li>
+					</ul>
+
+					<ul>
+						<li class="heading">Radio navigation</li>
+						<li class="">foobar</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+	<script>
+		// Set the Export button filename text
+		document.querySelector("#btn-export span").innerHTML = kneeboardFilename
+	</script>
+</body>
+
+</html>

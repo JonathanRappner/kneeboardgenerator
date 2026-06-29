@@ -1,0 +1,116 @@
+:root {
+	--controls-height: 72px;
+	--content-bottom-margin: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: sans-serif;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #222;
+	}
+}
+
+/* Export button container (upper half) */
+.controls {
+	text-align: center;
+	padding: 16px 0;
+	height: var(--controls-height);
+	box-sizing: border-box;
+
+	/* Export button */
+	#btn-export {
+		padding: 10px 14px;
+		font-size: 14px;
+		font-weight: 600;
+		border: 1px solid black;
+		background: white;
+		cursor: pointer;
+
+		&:hover {
+			background: #f0f0f0;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background: #333;
+			color: white;
+			border-color: white;
+
+			&:hover {
+				background: #444;
+			}
+		}
+	}
+}
+
+/* Kneeboard container (lower half) */
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+/* Kneeboard (preview version)
+This is the element that gets exported.
+This plain version without the .export class is the preview version.
+Some of these styles get overridden in the export version.
+*/
+#kneeboard {
+	padding: 32px;
+	display: flex;
+	gap: 32px; /* Gap between columns */ 
+	overflow: hidden;
+	aspect-ratio: 10 / 15; /* DCS kneeboard aspect ratio: 10:15 */
+	height: calc(100vh - var(--controls-height) - var(--content-bottom-margin)); /* Full height minus the .controls section */
+	border: 1px solid #CCC;
+	box-sizing: border-box; /* Borders and padding expand inward and do not adjust the size of the element. */
+	background-color: white; /* Without this the png's would have a transparent background */
+
+	/* Sections */
+	ul {
+		padding: 0;
+		list-style-type: none;
+		margin: 0 0 16px 0;
+	}
+
+	/* Cells */
+	li {
+		padding: 4px;
+	}
+}
+
+/* Kneeboard (export version)
+The version of the kneeboard that gets exported needs to be adjusted a bit since it's usually larger than the preview.
+I've made these adjustments by eye so they might not line up perferctly with the preview version.
+*/
+#kneeboard.export {
+	width: 1280px;
+	height: 1920px;
+	font-size: 38px;
+	padding: 64px;
+	gap: 64px;
+
+	ul {
+		margin-bottom: 48px;
+	}
+
+	li {
+		padding: 12px;
+	}
+}
+
+/* Number of columns */
+#kneeboard.one-column > div {
+	width: 100%;
+}
+#kneeboard.two-columns > div {
+	width: 50%;
+}
+#kneeboard.three-columns > div {
+	width: 33.33%;
+}
+#kneeboard.four-columns > div {
+	width: 25%;
+}

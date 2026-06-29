@@ -1,0 +1,119 @@
+/* -------- Red -------- */
+
+.red {
+	color: white;
+	border-bottom-color: white; /* for dividing lines */
+	background-color: hsl(0, 40%, 50%);
+}
+.darkRed {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(0, 100%, 28%);
+}
+
+.lightRed {
+	color: white;
+	border-bottom-color: white;
+	background-color: #e06666;
+}
+
+
+/* -------- Blue -------- */
+.darkBlue {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(217, 100%, 28%);
+}
+
+.blue {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(217, 89%, 60%);
+}
+
+.lightBlue {
+	color: black;
+	border-bottom-color: black;
+	background-color: hsl(216, 100%, 85%);
+}
+
+
+/* -------- Green -------- */
+.darkGreen {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(120, 100%, 28%);
+}
+
+.green {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(120, 40%, 50%);
+}
+
+.lightGreen {
+	color: black;
+	border-bottom-color: black;
+	background-color: hsl(120, 70%, 60%);
+}
+
+
+/* -------- Purple -------- */
+.darkPurple {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(300, 100%, 20%);
+}
+
+.purple {
+	color: white;
+	border-bottom-color: white;
+	background-color: hsl(300, 40%, 50%);
+}
+
+.lightPurple {
+	color: black;
+	border-bottom-color: black;
+	background-color: hsl(300, 100%, 80%);
+}
+
+
+/* -------- Misc cell types -------- */
+
+.heading {
+	font-weight: bold;
+}
+
+.misc {
+	color: black;
+	border-bottom-color: black;
+	background-color: #b7b7b7;
+}
+.wait {
+	color: black;
+	border-bottom-color: black;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: hsl(39, 100%, 50%);
+}
+
+
+/* -------- Misc settings -------- */
+
+/* Hints */
+li > small {
+	font-size: 0.6em;
+}
+
+/* Values */
+li > strong {
+	text-transform: uppercase;
+}
+
+/* Dividers */
+li.divider {
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	box-sizing: border-box;
+}
